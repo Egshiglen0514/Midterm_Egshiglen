@@ -1,0 +1,155 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Resume — Egshiglen</title>
+<style>
+:root{
+  --accent:#0f6fab;
+  --muted:#6b7280;
+  --bg:#f7f9fb;
+  --card:#ffffff;
+  --glass: rgba(255,255,255,0.6);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);color:#111827}
+
+.container{max-width:1000px;margin:32px auto;padding:24px}
+.resume{display:grid;grid-template-columns:320px 1fr;gap:24px}
+
+.card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.08);overflow:hidden}
+.left{padding:28px}
+.photo{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px;margin-bottom:18px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+h1{margin:0;font-size:28px}
+h2{margin:2px 0 14px;font-size:14px;color:var(--muted)}
+
+.section{margin-bottom:18px}
+.section-title{font-size:12px;color:var(--muted);letter-spacing:.6px;margin-bottom:8px}
+.contact-item{font-size:13px;color:#111827;margin:6px 0}
+
+.skill-list{display:flex;flex-wrap:wrap;gap:8px}
+.skill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:12px}
+
+.right{padding:28px}
+.headline{display:flex;justify-content:space-between;align-items:center}
+.summary{color:var(--muted);margin-top:8px;line-height:1.5}
+
+.job{margin-bottom:14px}
+.job .title{font-weight:700}
+.job .meta{font-size:13px;color:var(--muted)}
+.job ul{margin:8px 0 0;padding-left:18px}
+
+.edu{margin-bottom:12px}
+
+.controls{display:flex;gap:8px}
+.btn{border:0;padding:8px 14px;border-radius:8px;background:var(--accent);color:white;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(15,111,171,0.12)}
+
+@media print{
+  .controls{display:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+    <div>
+      <strong style="font-size:18px">Resume — Egshiglen</strong><br>
+      <span style="color:var(--muted);font-size:13px;font-weight:600">Student ID: 114035116</span>
+      <div style="color:var(--muted);font-size:13px">Download or print this file. Customize the content below.</div>
+    </div>
+    <div class="controls">
+      <button class="btn" onclick="window.print()">Print / Save PDF</button>
+    </div>
+  </div>
+
+  <div class="resume">
+    <aside class="card left">
+      <div class="photo"><img alt="Egshiglen photo" src=""></div>
+      <h1>Egshiglen</h1>
+      <h2>Financial Analyst · Data-driven · Bilingual</h2>
+
+      <div class="section">
+        <div class="section-title">Contact</div>
+        <div class="contact-item">📍 Taichung, Taiwan</div>
+        <div class="contact-item">✉️ <a href="mailto:114035116@live.asia.edu.tw">114035116@live.asia.edu.tw</a></div>
+        <div class="contact-item">🔗 <a href="#">linkedin.com/in/yourprofile</a></div>
+        <div class="contact-item">🌐 <a href="#">your-portfolio.example</a></div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="skill-list">
+          <div class="skill">Financial Modeling</div>
+          <div class="skill">Excel (Advanced)</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Tableau</div>
+          <div class="skill">Valuation</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Languages</div>
+        <div class="contact-item">Mongolian — Native</div>
+        <div class="contact-item">English — Professional</div>
+        <div class="contact-item">Chinese — Conversational</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Tools</div>
+        <div class="contact-item">Excel, Sheets, TradingView, Bloomberg (familiar)</div>
+      </div>
+    </aside>
+
+    <main class="card right">
+      <div class="headline">
+        <div>
+          <div style="font-size:18px;font-weight:700">Professional Summary</div>
+          <div class="summary">Analytical and detail-oriented financial management student with experience in valuation, budgeting, and reporting. Skilled in financial modeling and investment analysis.</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Experience</div>
+
+        <div class="job">
+          <div class="title">Finance Intern — Company Name</div>
+          <div class="meta">Jun 2024 — Aug 2024 • Ulaanbaatar, Mongolia</div>
+          <ul>
+            <li>Prepared monthly financial statements and variance analysis.</li>
+            <li>Built DCF model estimating NPV & IRR under multiple scenarios.</li>
+            <li>Streamlined budgeting process, reducing time by 15%.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="title">Student Research Assistant — University Name</div>
+          <div class="meta">Sep 2023 — May 2024 • Dornod, Mongolia</div>
+          <ul>
+            <li>Cleaned financial data and ran regression models.</li>
+            <li>Presented findings and produced visual dashboards.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Education</div>
+
+        <div class="edu">
+          <div style="font-weight:700">University of Finance and Economics — B.S. Financial Management</div>
+          <div class="meta">Expected 2026 • 2+2 Program</div>
+        </div>
+
+        <div class="edu">
+          <div style="font-weight:700">Asia University (Taiwan) — Exchange</div>
+          <div class="meta">2025</div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>
